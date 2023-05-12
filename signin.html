@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background: radial-gradient(#111, #071a1a)
+        }
+        a{
+            text-decoration: none;
+            color: azure;
+            margin-top: 10%;
+        }
+        .button{
+            border-radius: 7px;
+            border-color: black;
+            color: black;
+            padding: 10px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            margin: 4px 2px;
+            border-width: 4px;
+            cursor: pointer;
+            background-color: white;
+        }
+        .button:hover{
+            background-color: bisque;
+            padding: 10px 18px;
+        }
+        .right{
+			float: right;
+        }
+        .left{
+			float: left;
+        }
+        .field{
+            margin-top: 6%;
+            margin-left: 35%;
+            padding: 2%;
+            border-radius: 2%;
+            border-color: #111;
+            background-color: none;
+            border-width: 4px;
+            -moz-box-align: center;
+            height: 300px;
+            width: 400px;
+            
+        }
+        .field:hover{
+            border-width: 4px;
+            border-color: white;
+        }
+        .ip{
+            margin: 10px;
+            border-color: rgb(204, 49, 49);
+            border-width: 3px;
+            background-color: white;
+            color: rgb(6, 48, 85);
+            padding: 1px;
+            border-radius: 5%;
+            width: 100px;
+            height: 35px;
+            size: 30px;
+        }
+        .ip:hover{
+            border-width: 4px;
+            background-color: aquamarine;
+        }
+    </style>
+    <title>Extravaganza</title>
+</head>
+<body>
+    <a href="./index.html"><button class="button"><b>Back</b></button></a>
+    <form onsubmit="validate()" action="./home.html" autocomplete="off">
+        <fieldset class="field">    
+            <h1 style="color: white;text-align: center;"><b>SIGN IN</b></h1>
+            <input style="height: 25px;width: 375px;" placeholder="Id" type="text" id="id" name="id" required><br>
+            <br>
+            <input style="height: 25px;width: 375px;" placeholder="Enter password" type="password" id="password" name="password" required><br>
+            <br><br>
+            <input class="ip" type="submit" value="Sign in">
+            <input class="ip" type="reset"><br>
+        </fieldset>
+    </form>
+    <script src="./styles.js"></script>
+    <div style="position: absolute;right: 10px;top: 70%;">
+        <p style="color: white;text-align: right;font-size: 25px;margin-right: 20px;margin-top: 93px;">Forgot password ? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New user ?</p>
+        <a href="./signup.html"><button class="button right" ><b>sign up</b></button></a>
+        <a href="./change.html"><button class="button right"><b>Set password</b></button></a>
+    </div>
+</body>
+</html>

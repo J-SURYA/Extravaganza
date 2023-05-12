@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background: radial-gradient(#111, #071a1a)
+        }
+        h1{
+            margin-top: 0%;
+        }
+        a{
+            text-decoration: none;
+            color: azure;
+            margin-top: 10%;
+        }
+        .button{
+            border-radius: 7px;
+            border-color: black;
+            color: black;
+            padding: 10px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            margin: 4px 2px;
+            border-width: 4px;
+            cursor: pointer;
+            background-color: white;
+        }
+        .button:hover{
+            background-color: bisque;
+            padding: 10px 18px;
+        }
+        .right{
+			float: right;
+		}
+        .field{
+            margin-top: 3%;
+            margin-left: 35%;
+            padding: 2%;
+            border-radius: 2%;
+            border-color: #111;
+            background-color: none;
+            -moz-box-align: center;
+            border-width: 4px;
+            height: 400px;
+            width: 400px;
+        }
+        .field:hover{
+            border-width: 4px;
+            border-color: white;
+        }
+        .ip{
+            margin: 10px;
+            border-color: rgb(204, 49, 49);
+            border-width: 3px;
+            background-color: white;
+            color: rgb(6, 48, 85);
+            padding: 1px;
+            border-radius: 5%;
+            width: 100px;
+            height: 35px;
+            size: 30px;
+        }
+        .ip:hover{
+            border-width: 4px;
+            background-color: aquamarine;
+        }
+    </style>
+    <title>Extravaganza</title>
+</head>
+<body>
+    <a href="./index.html"><button class="button"><b>Back</b></button></a>
+    <form name="for" autocomplete="off" action="./home.html">
+        <fieldset class="field">
+            <h1 style="color: white;text-align: center;" ><b>SIGN UP</b></h1>
+            <input style="height: 25px;width: 375px;" placeholder="Name"  type="text" id="name" name="name" required><br>
+            <br>
+            <input style="height: 25px;width: 375px;" placeholder="Id" type="text" id="id" name="id" required><br>
+            <br>
+            <input style="height: 25px;width: 375px;" placeholder="E-mail" type="email" id="email" name="email" required><br>
+            <p style="color: white;">DOB</p>
+            <input style="height: 25px;width: 375px;" placeholder="Date of birth" type="date" id="dob" name="dob" required><br>
+            <br>
+            <input style="height: 25px;width: 375px;" placeholder="Set password" type="password" id="password" name="password" required><br>
+            <br>
+            <input class="ip" type="submit" value="Sign up">
+            <input class="ip" type="reset">
+            <p id="res"></p>
+        </fieldset>
+    </form><br>
+    <div style="position: absolute;right: 10px;top: 79%;">
+        <p style="color: white;text-align: right;font-size: 25px;margin-right: 10px;">Registered?</p>
+        <a href="./signin.html"><button class="button right"><b>sign in</b></button></a>
+    </div>
+</body>
+</html>
